@@ -2,7 +2,12 @@ var joinForm;
 var joinClick = function () {
     $s("join").blur();
     if ( joinForm.validateForm() ) {
-        alert("Please correct the errors on the page.");
+        var errors = document.getElementsByClassName('error');
+        var feedbackMessage = document.getElementById('feedback');
+        for (var i = 0; i < errors.length; i++) {
+            errors[i].setAttribute('role', 'alert');
+        }
+        feedbackMessage.setAttribute('role','alert');
     } else {
         document.location.href = '#top';
         $s("feedback").focus();
