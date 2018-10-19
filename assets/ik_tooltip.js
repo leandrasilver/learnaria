@@ -96,7 +96,7 @@
 						.attr({
 							'aria-hidden': 'true'
 						})
-						.removeClass('visible');       
+						.removeClass('visible');  
 					}
 				})
 
