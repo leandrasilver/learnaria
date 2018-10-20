@@ -204,7 +204,6 @@
 		var $elem, plugin, value;
 		$elem = $(this);
 		plugin = event.data.plugin;
-		console.log(event.keyCode);
 		switch (event.keyCode) {
 			case ik_utils.keys.right:
 				value = parseInt($elem.attr('aria-valuenow')) + plugin.options.step;
