@@ -113,7 +113,7 @@
 			
 			})
 			.on('click', {'plugin': plugin}, plugin.onClick)
-			.on('keydown', {'plugin', plugin}, plugin.onKeyDown);
+			.on('keydown', {'plugin': plugin}, plugin.onKeyDown);
 
 			$elem.find('li.first').attr({
 				'tabindex':0
