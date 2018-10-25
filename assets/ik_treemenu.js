@@ -115,10 +115,12 @@
 			.on('click', {'plugin': plugin}, plugin.onClick)
 			.on('keydown', {'plugin': plugin}, plugin.onKeyDown);
 
-			$elem.find('li.first').attr({
-				'tabindex':0
-			});
-		
+
+			$elem // make the first treeitem focusable
+			    .find('li:first')
+			    .attr({
+			        'tabindex': 0
+			    });
 	};
 	
 	/** 
